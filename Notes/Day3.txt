@@ -1,0 +1,21 @@
+perry.mckenzie@netfocusconsulting.com
+
+COMMAND LINE:
+
+-in your GCP create an instance
+	-choose Iowa because it's the cheapest
+	-for boot disk choose centoOs7
+	-pick micro to cut cost
+
+-go through the CMS command text using the SSH inside the GCP
+	-install:  sudo yum install php.x86_64
+
+-re-establishing a db connection:
+	-stop and start back up the intance
+	-sudo /sbin/service httpd start
+	-sudo /sbin/service mariadb start
+	-use SLQ text
+		--> site url code reveals your old ip address --> the one you need to change
+		-using the update code, change the to the new IP address
+		
+	

@@ -1,0 +1,2 @@
+Please review chapters 1,2,3 and read chapters 4 & 5 in the Wordpress text
+(Tour of the Core and The Loop)

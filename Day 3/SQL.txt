@@ -1,0 +1,15 @@
+mysql -u root -p
+
+show databases;
+
+use wordpress1;
+
+show tables;
+
+select * from wp_options where option_name='siteurl';
+
+update wp_options set option_value='http://35.193.27.130/wordpress1' where option_id=2;
+
+select * from wp_options where option_name='home';
+
+update wp_options set option_value='http://35.197.61.111/wordpress1' where option_id=1;

@@ -1,0 +1,38 @@
+https://codex.wordpress.org/Changing_The_Site_URL
+
+
+--Add these two lines below to wp-config.php to change the siteurl and home values:
+
+define('WP_HOME','http://example.com');
+
+define('WP_SITEURL','http://example.com');
+
+
+
+-- For example
+
+define('WP_HOME','http://10.163.110.86/VisitMontana');
+
+define('WP_SITEURL','http://10.163.110.86/VisitMontana');
+
+
+
+
+--Then to update media links in your content and posts, run the SQL scripts below
+-- in the DB replacing <old-IP-address> and <new-IP-address> with appropriate values
+
+
+
+Update wp_posts set post_content=replace(post_content,'href="http://<old-IP-address>"','href="http://<new-IP-address>"');
+
+
+
+
+
+
+Update wp_posts set post_content=replace(post_content, 'src="http://<old-IP-address>"','src="http://<new-IP-address>"');
+
+
+
+
+

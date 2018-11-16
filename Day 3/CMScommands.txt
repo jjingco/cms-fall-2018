@@ -1,0 +1,172 @@
+yum search php --> since locked out use sudo yum search php
+	--> filter using: sudo yum search php | grep php.x86 --> make sure library is there
+
+
+
+# apache web server also gets install below
+
+sudo yum install php.x86_64
+
+yum search mysql
+
+sudo yum install mariadb-server.x86_64
+
+
+
+# install the php/mysql connector
+
+sudo yum install php-mysql.x86_64
+
+
+
+# copy wordpress installation from local desktop
+
+# Click the gear icon and browse to wordpress.zip file, and upload
+
+# it gets uploaded to your /home/[username] directory
+
+
+# move wordpress zip to /var/www/html dir
+
+cd ~
+
+sudo mv wordpress-4.8.3.zip /var/www/html/.
+
+
+sudo yum install unzip.x86_64
+
+cd /var/www/html
+
+sudo unzip wordpress-4.8.3.zip
+
+
+sudo mv wordpress wordpress1
+
+
+
+# check to see if apache is running
+
+ps -ef | grep httpd
+
+
+# start appache
+
+sudo /sbin/service httpd start
+
+ps -ef | grep httpd
+
+
+
+# notice in the command above that now there are httpd processes running and they're owned by apache
+
+# so change ownership of the wordpress1 directory to apache:apache
+
+sudo chown -R apache:apache wordpress1
+
+ls -l
+
+
+
+# start mariaDB
+
+sudo /sbin/service mariadb start
+
+mysql -u root -p
+
+--> no password just hit enter
+
+
+
+# in mysql prompt:
+ 
+   show databases;
+
+    create database wordpress1;
+ 
+   create user '<userName>'@'localhost' identified by '<password>';
+
+    grant all privileges on <databaseName>.* to '<userName>'@'localhost' with grant option;
+
+    exit;
+
+
+# in a browser, copy the external IP address for your site, add the wordpress folder name to it...
+http://<external-IP>/wordpress1
+
+
+# click 'Next' until the page that asks you to create the wp-config.php file
+
+# copy the code for the file
+
+cd /var/www/html/wordpress1
+
+sudo vi wp-config.php
+
+   ESC i
+
+   CTRL v  #(paste the code in)
+
+   ESC :wq!
+   ENTER  #(save it)
+
+
+# go back to browser and complete signup for wordpress
+
+
+# install a theme
+
+# copy theme zip folder from local desktop
+
+# click the gear icon and browser to theme.zip file, and click 'Upload File'
+
+# it gets uploaded to your /home/<username> dir
+
+
+cd ~
+
+sudo mv total-1.1.1.zip /var/www/html/wordpress1/wp-content/themes/.
+
+cd /var/www/html/wordpress1/wp-content/themes
+
+sudo unzip total-1.1.1.zip
+
+sudo chown -R apache:apache total-1.1.1
+
+
+# test in browser
+
+
+# update php.ini file to enlarge our upload file size
+
+cd /etc
+
+
+# backup php.ini file
+
+sudo cp php.ini php.ini.bak
+sudo vi php.ini
+
+	/upload  # find max_upload_size and change to 20M
+
+        ESC i   # to change
+
+	/post   # find max_post_size and change to 20M
+
+        ESC i   # to change
+
+	ESC :wq! ENTER  # to save
+
+
+
+sudo /sbin/service httpd restart
+
+# so apache web server sees the change
+
+
+# install graphic library so you can edit images properly
+
+sudo yum install php-gd.x86_64
+
+
+# restart apache web server so it sees the change
+sudo /sbin/service httpd restart 

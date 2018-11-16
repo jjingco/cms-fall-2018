@@ -1,0 +1,14 @@
+create database montanaWP;
+create user 'montanaUser'@'localhost' identified by 'passwordMT';
+grant all privileges on montanaWP.* to 'montanaUser'@'localhost' with grant option;
+
+
+
+
+create database <databaseName>;
+
+
+create user '<userName>'@'localhost' identified by '<password>';
+
+
+grant all privileges on <databaseName>.* to '<userName>'@'localhost' with grant option;

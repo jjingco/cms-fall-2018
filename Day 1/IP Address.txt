@@ -1,0 +1,18 @@
+How to get your IP address?
+
+
+Open up a command window (on the start menu, type 'cmd'
+
+
+At the prompt type 'ipconfig'
+
+In the resulting output, 
+your IP address is on this line:
+
+
+IPv4 Address. . . . . . . . . . . : 10.163.XXX.XX
+
+
+Put that in the Setting page of your wordpress instance,
+
+replacing 'localhost' with your IP address

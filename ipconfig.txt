@@ -1,0 +1,2 @@
+define("WP_HOME","http://<ipaddress>/assignment1");
+define("WP_SITEURL","http://<ipaddress>/assignment1");

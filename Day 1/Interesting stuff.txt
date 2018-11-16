@@ -1,0 +1,49 @@
+Good tools, books, etc....
+
+Zapier.com      Awesome small business website integration
+Wufoo.com       Online Payments
+getpayd.com     online Payments
+waveapps.com    Online small business accounting/invoicing
+stripe.com      e-commerce tools
+
+Books:
+Social Engineering in IT Security: Tools, Tactics, and Techniques by Sharon Conheady
+Worm: The First Digital World War by Mark Bowden
+The Cuckoo's Egg: Tracking a Spy Through the Maze of Computer Espionage by Cliff Stoll
+
+
+Automated website testing:  Selenium
+
+http://continuouslylearning.blogspot.ca/search/label/IT%20Newbies    (My blog)
+http://thewanderingnomad.com   (blog about working remotely
+http://wired.com  (design stuff)
+https://dzone.com  (tech stuff)
+https://stackoverflow.com  (get your tech questions answered and find interesting tech jobs)
+https://atlassian.com (their tools)
+https://digitalagencynetwork.com/agencies/calgary/  (list of Calgary digital media agencies)
+
+Local Business to investigate:
+- Critical Mass
+- Solid Site
+- Weigl Publishers
+- ARIS
+- Pixels & Pints
+- The City of Calgary
+- Evans Hunt
+- Flipp
+- ZGM Modern Marketing Partners
+- ClearMotive
+- CodeSign Technologies
+- Cult Collective
+- Morad Media
+- Freshwater Creative
+- NewWave Media
+- Octopus & Son
+- Saw
+- Simple Simple
+
+Portfolio Advice:
+- Do out-of-class research on a framework/project
+  - write a report on it that critiques it and/or talks about your perspective and opinion of it, and any challenges you ran into with it
+  - show case a small project you did with it
+  - potential employers are interested in your perspective - how you think, how your mind works

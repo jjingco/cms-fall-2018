@@ -1,0 +1,16 @@
+-can't have nested folders in htdocs
+	-it won't read properly so you need to copy the inner folder and
+		paste it outside so it's no longer nested 
+-pagination creates <1 of 20>
+	-so that you know the indexes of your posts especially
+		if you only want a certain number of posts
+-custom db credentials: custom1user, passwordMT
+
+
+Pattern for Adding Functionality to a Theme:
+	1. What functionality do you want?
+	2. Find reference for it in WP Codex --> documentation for wordpress
+	3. Use/implement the code examples
+	4. Test
+	
+	eg: google wordpress codex custom header

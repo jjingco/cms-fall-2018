@@ -1,0 +1,28 @@
+- In the Visit-Montana instance:
+
+
+	- Install the Free Amplify Theme by FlyFreeMedia
+
+
+	
+- Make your wordpress site look like the layouts
+
+
+		
+- You'll have to edit some of the images provided (in wordpress)
+
+
+		
+- You'll have to change the color scheme a bit
+
+
+		
+- You'll have to remove/add menus
+
+
+		
+- Notice the alternating header images.  Figure out how to do that
+
+
+		
+- All pages, no posts.

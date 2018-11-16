@@ -1,0 +1,15 @@
+To allow WordPress to upload files with a size bigger than 2M...
+
+Find the php.ini file in your system.
+Usually in C:\xampp\php\php.ini
+
+Back it up (copy it and rename the copy php.ini.bak)
+
+Edit php.ini and change the following lines:
+post_max_size=2M          ->  change value to 20M
+upload_max_filesize=20M   ->  change value to 20M
+
+Save php.ini
+Restart apache
+
+Rock'n'roll

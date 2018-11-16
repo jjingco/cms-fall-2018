@@ -1,0 +1,73 @@
+CMS-Fall-218
+
+-email:
+-other content management systems include: Blogger, Drupal and MySQL
+
+
+
+GRADING SCHEME: 
+-IN CLASS ASSIGNMENTS 
+	-assignment 1 -personal site --> local site (20%)
+	-assignment 2 -group site --> local site (20%)
+	-assignemnt 3 -personal site --> remote server (20%)
+	-assignment 4 -group site --> remote server (20%)
+-QUIZ --> remote server (10%)
+-PARTICITPATION (10%)
+
+
+
+CONTENT MANAGEMENT SYSTEMS:
+
+-uses databases (text, file references, images, html etc.)
+
+-serves html, php, css and js
+
+-why wordpress?
+	-clients can manage the content of the site
+	-separation of content vs code
+		-can resdesign the site without changing the content
+	-I18N --> internationalization
+
+-wordpress.org
+	-download it and put it into C:xampp/htdocs
+	-start MySQL and apache before you can launch
+	-go to phpAdmin on xampp through local host and clicking admin on the console
+		-create the db using the scripts
+	-localhost/wp? --> make the login compatible with the xampp SQL setup
+		-this has to be the same so that they can talk to each other
+	-install --> use differen username here if you want:
+		-password is password with username jjingco 
+		-email of jjingco2518@gmail.com
+		-this part can be different from the sql --> actually advised so no hacking
+		-login using credentials --> you're in wordpress now!
+		-find php.ini by viewing hidden items and extenshions on xampp/php
+			-change file sizes using text 
+	-Appearance --> customize
+
+-setting up an instance:
+	-copy and paste the wordpress folder in the htdocs folder --> Assignment1
+	-create a new database --> assignment1, username: assign1user, pw: password
+	-on wordpress local host connect it with db credentials
+		-table prefix: wp_
+		-database host: localhost
+	-login with username: jjingco, jjingco2518@gmail.com, password
+	-to get the google map: look up the address on google maps and go to share/embed a map
+		-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.352632861583!2d-114.08124438395735!3d51.046576252111755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716fe40b966ca3%3A0x4d066f0ad2a8f15e!2sCG+Law+LLP!5e0!3m2!1sen!2sca!4v1542143474168" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		-paste the html on to your site
+	-to get the ip address on the commandline: ipconfig
+		-IPv4 address --> copy it and put it into settings --> (URL)'s 
+			-eg: http://10.163.110.6/assignment1
+	
+
+-concepts with respect to a magazine:
+	-articles = posts (dynamic)
+	-contact --> page (static)
+	-about us --> page (static)
+
+-privacy policy: http://localhost/wp1/wp-admin/tools.php?wp-privacy-policy-guide
+	-view example
+
+-udemy certifications --> look for the most popular and the best rated
+	--> never pay full-price for a course
+	
+
